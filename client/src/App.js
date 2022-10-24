@@ -8,11 +8,12 @@ import Form from './Components/Form/Form';
 import useStyles from './styles';
 
 function App() {
-  const classes = useStyles();
   const dispatch = useDispatch();
+  const classes = useStyles();
+  
 
   useEffect(() => {
-    dispatch(getPosts);
+    dispatch(getPosts());
   }, [dispatch])
   
 
